@@ -1,0 +1,176 @@
+/*PERSO*/
+
+body {
+    background-color: #eee;
+}
+
+.logo_top {
+    height: 20px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+    padding-top: 30px;
+    padding-bottom: 25px;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 2.5em;
+    color: #DC143C;
+}
+
+header {
+    border-bottom: solid 1px #DC143C;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+nav {
+    width: 100%;
+    margin: 0 auto;
+    height: 73px;
+    padding-top: 22px;
+    text-align: center;
+    background-color: #fff;
+    padding-bottom: 13px;
+    position: relative;
+}
+
+nav ul {
+    display: inline;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    color:#000;
+    padding: 23px;
+    padding-top: 30px;
+    border: solid 1px #DC143C;
+}
+
+nav i:hover {
+    transition: all 0.25s ease-in-out;
+    color: #DC143C;
+}
+
+#menu-deroulant, #menu-deroulant ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#menu-deroulant {
+    text-align: center;
+}
+#menu-deroulant li {
+    display: inline-block;
+}
+#menu-deroulant ul li {
+    display: inherit;
+}
+#menu-deroulant a {
+    text-decoration: none;
+    display: block;
+	color:#000;
+}
+#menu-deroulant ul {
+    position: absolute;
+    left: -999em;
+    text-align: center;
+    z-index: 1000;
+    width: 150px;
+    background-color: #fff;
+}
+#menu-deroulant li:hover ul {
+    left: auto;
+    right: auto;
+}
+
+#menu-deroulant li ul li a:hover {
+    transition: all 0.25s ease-in-out;
+    color: #DC143C;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    border-bottom: solid 1px #DC143C;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+main h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 2em;
+    color: #DC143C;
+    padding: 25px;
+    background-color: #fff;
+}
+
+.music_container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 25px 0;
+    margin-bottom: 25px;
+}
+
+.music_container h3 {
+    padding: 10px;
+    margin-bottom: 25px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.blank {
+    background-color: #fff;
+}
+
+.last {
+    padding-bottom: 50px;
+    background-color: #fff;
+}
+
+footer {
+    width: 100%;
+    margin: 0 auto;
+    height: 45px;
+    padding-top: 16px;
+    text-align: center;
+    border-top: solid 1px #DC143C;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+}
+
+footer i:hover {
+    transition: all 0.25s ease-in-out;
+    color: #DC143C;
+}
+
+footer ul {
+    display: inline;
+}
+
+footer li {
+    display: inline;
+}
+
+footer a {
+    text-decoration: none;
+    color:#000;
+    padding: 0 15px;
+}
+
+footer a:hover {
+    color: #DC143C;
+}
+
