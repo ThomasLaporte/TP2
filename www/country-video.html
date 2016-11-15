@@ -1,0 +1,97 @@
+<!doctype html>
+
+<html lang="fr">
+    
+<head>
+  <meta charset="utf-8">
+  <title>Vidéos Country</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+</head>
+    
+<body>
+
+<header>
+    <div class="logo_top"><h1>Awesome music website</h1></div>
+    <nav class="nav">
+            <ul id="menu-deroulant">
+                <li><a href="index.html"><i class="fa fa-music fa-2x" aria-hidden="true"></i></a>
+            <ul>
+                <li><a href="hip-hop_musique.html">Hip Hop</a></li>
+                <li><a href="rock_musique.html">Rock</a></li>
+                <li><a href="reggae_musique.html">Reggae</a></li>
+                <li><a href="country_musique.html">Country</a></li>
+            </ul>
+        </li>
+        <li><a href="#"><i class="fa fa-play-circle-o fa-2x" aria-hidden="true"></i></a>
+            <ul>
+                <li><a href="rap-video.html">Hip Hop</a></li>
+                <li><a href="rock-video.html">Rock</a></li>
+                <li><a href="reggae-video.html">Reggae</a></li>
+                <li><a href="country-video.html">Country</a></li>
+            </ul>
+        </li>
+    </ul>
+    </nav> 
+</header>
+    
+    <main>
+        <section class="video">
+          <h2>Country</h2>
+          <article class="music_container blank">
+          <h3>John Forgerty</h3>
+          	<iframe class="ytplayer" type="text/html" width="320" height="180" src="https://www.youtube.com/embed/4cyZvqetODY" frameborder="0"/></iframe>
+            <iframe class="ytplayer" type="text/html" width="320" height="180" src="https://www.youtube.com/embed/3KT5vGVumhc" frameborder="0"/></iframe>
+            <iframe class="ytplayer" type="text/html" width="320" height="180" src="https://www.youtube.com/embed/eLZghQtxeSA" frameborder="0"/></iframe>
+            <iframe class="ytplayer" type="text/html" width="320" height="180" src="https://www.youtube.com/embed/BERi4NECnqg" frameborder="0"/></iframe>
+
+          </article>
+
+          <article class="music_container">
+          <h3>Alan Jackson</h3>
+            <iframe class="ytplayer" type="text/html" width="320" height="180" src="https://www.youtube.com/embed/dSkeh_hBF6w" frameborder="0"/></iframe>
+            <iframe class="ytplayer" type="text/html" width="320" height="180" src="https://www.youtube.com/embed/ub1U6z_byj0" frameborder="0"/></iframe>
+            <iframe class="ytplayer" type="text/html" width="320" height="180" src="https://www.youtube.com/embed/9xyt9gUlrec" frameborder="0"/></iframe>
+            <iframe class="ytplayer" type="text/html" width="320" height="180" src="https://www.youtube.com/embed/aFEnHoex6oo" frameborder="0"/></iframe>
+          </article>
+                
+
+          <article class="music_container last">
+          <h3>Ray Scott</h3>
+            <iframe class="ytplayer" type="text/html" width="320" height="180" src="https://www.youtube.com/embed/P8xVcyclY40" frameborder="0"/></iframe>
+            <iframe class="ytplayer" type="text/html" width="320" height="180" src="https://www.youtube.com/embed/vMil4Zw-EKg" frameborder="0"/></iframe>
+            <iframe class="ytplayer" type="text/html" width="320" height="180" src="https://www.youtube.com/embed/4LiujCjw0gg" frameborder="0"/></iframe>
+            <iframe class="ytplayer" type="text/html" width="320" height="180" src="https://www.youtube.com/embed/K8ecGzgLO1M" frameborder="0"/></iframe>
+
+          </article>
+      </section>
+    </main>
+        
+<footer>
+    <section class="social_container">
+        <ul class="social_ul">
+            <li><a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+        </ul>
+    </section>
+</footer>
+    
+<script>
+     $(function(){
+   $(window).scroll(function () {
+      if ($(this).scrollTop() > 70) {
+          $('.nav').addClass("fixed");
+      } else {
+      $('.nav').removeClass("fixed");
+      }
+   });
+ });
+</script>
+    
+</body>
+    
+</html>
