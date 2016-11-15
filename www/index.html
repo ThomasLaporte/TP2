@@ -12,13 +12,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 </head>
     
-<body>
-
+<body id="body" onload="loadingScreen();">
+<div id="item">
+   <div class="loader"></div>
+   <!-- <p>Un instant de patience est déjà une victoire &hellip;</p> -->
+ </div>
+<div id="wrapper">
 <header>
     <div class="logo_top"><h1>Awesome music website</h1></div>
     <nav class="nav">
             <ul id="menu-deroulant">
-                <li><a href="index.html"><i class="fa fa-music fa-2x" aria-hidden="true"></i></a>
+                <li><a class="nav_a nav_a_01" href="index.html"><i class="fa fa-music fa-2x i01" aria-hidden="true"></i></a>
             <ul>
                 <li><a href="hip-hop_musique.html">Hip Hop</a></li>
                 <li><a href="rock_musique.html">Rock</a></li>
@@ -26,7 +30,7 @@
                 <li><a href="country_musique.html">Country</a></li>
             </ul>
         </li>
-        <li><a href="#"><i class="fa fa-play-circle-o fa-2x" aria-hidden="true"></i></a>
+        <li><a class="nav_a nav_a_02" href="#"><i class="fa fa-play-circle-o fa-2x i02" aria-hidden="true"></i></a>
             <ul>
                 <li><a href="rap-video.html">Hip Hop</a></li>
                 <li><a href="rock-video.html">Rock</a></li>
@@ -167,20 +171,8 @@
         </ul>
     </section>
 </footer>
-    
-<script>
-     $(function(){
-   $(window).scroll(function () {
-      if ($(this).scrollTop() > 70) {
-          $('.nav').addClass("fixed");
-      } else {
-      $('.nav').removeClass("fixed");
-      }
-   });
- });
-    
-</script>
-    
+    </div>
+    <script language="javascript" src="script.js"></script>
 </body>
     
 </html>
