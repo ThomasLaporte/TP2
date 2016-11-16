@@ -104,6 +104,10 @@ body {
     text-align: @center;
 }
 
+nav, nav ul li a, i:hover, .fixed, .fixed_a, footer i:hover {
+    transition: @transition;
+}
+
 #logo_top {
     height: 20px;
     width: @max;
@@ -141,7 +145,6 @@ nav {
     justify-content: center;
     align-items: center;
     align-content: center;
-    transition: @transition;
     
     ul {
     display: inline;
@@ -155,7 +158,6 @@ nav {
     padding: 23px;
     padding-top: 30px;
     border: @border;
-    transition: @transition;
 }
 }
 
@@ -182,10 +184,11 @@ nav {
     li:hover ul {
     left: auto;
     right: auto;
+    animation: menuIn 2s ease-in-out forwards;
 }
     li ul li a:hover {
     transition: @transition;
-    color: @red;
+    color: @white;
 }
 }
 
@@ -209,21 +212,15 @@ i {
     color: @red;
 }
 
-i:hover {
-    transition: @transition;
-}
-
 .fixed {
     position: fixed;
     top: 0;
     border-bottom: @border;
     height: 25px;
-    transition: @transition;
 }
 
 .fixed_a {
     padding: 9px;
-    transition: @transition;
 }
 
 main {
@@ -316,7 +313,6 @@ footer, main:after  {
 }
 
 footer i:hover {
-    transition: @transition;
     color: @red;
 }
 
@@ -364,5 +360,18 @@ footer a {
   20%, 100%  { 
     transform: scale(0, 0);
     opacity: 0; 
+  }
+}
+
+@keyframes menuIn {
+  0%   { 
+    transform: scale(0, 0);
+    opacity: 0;
+    transform-origin: top;
+  }
+  20%, 100%  { 
+    transform: scale(1, 1);
+    opacity: 1;
+    transform-origin: top;
   }
 }
