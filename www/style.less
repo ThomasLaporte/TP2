@@ -83,7 +83,7 @@ body {
 .loader {
      position:fixed;
      margin:auto;
-     top:0;
+     top:20%;
      bottom:0;
      left:0;
      right:0;
@@ -98,7 +98,6 @@ body {
 
 #item p{
  color:@red;
- text-align:center;
  font-size:2em;
  font-family: 'Lobster', cursive;
  position:fixed;
@@ -106,16 +105,16 @@ body {
  bottom:0;
  left:0;
  right:0;
+top: 20%;
  max-width:50%;
- height:40%;
 
 }
 
-.logo_top, header, main, .music_container, footer {
+#logo_top, header, main, .music_container, footer {
     margin:@auto;
 }
 
-.logo_top, #menu-deroulant, #menu-deroulant ul, main, .music_container {
+#logo_top, #menu-deroulant, #menu-deroulant ul, main, .music_container, #item p {
     text-align: @center;
 }
 
@@ -129,7 +128,6 @@ nav, nav ul li a, i:hover, .fixed, .fixed_a, footer i:hover {
     background-color: @white;
     padding-top: 30px;
     padding-bottom: 25px;
-    text-align: center;
     
     a {
         text-decoration: none;
@@ -141,6 +139,10 @@ h1 {
     font-family: 'Lobster', cursive;
     font-size: 2.5em;
     color: @red;
+}
+
+p {
+    font-family: 'helvetica', sans-serif;
 }
 
 header {
