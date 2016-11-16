@@ -1,7 +1,8 @@
-/*function loadingScreen() {
+function loadingScreen() {
   document.body.removeChild(document.getElementById('item'));
+
   document.getElementById('wrapper').style.visibility = 'visible';
-}*/
+}
 
 /*NAV RESPONSIVE ON SCROLLING*/
 
@@ -87,3 +88,4 @@ $(document).ready(function(){
     $(".i02").removeClass('hover_a');
  });
 });
+    
