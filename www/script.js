@@ -102,7 +102,7 @@ $(document).ready(function(){
                    // LIEN
                    if(valueMusique == "lien"){
                      // Si c'est une musique Sound
-                     if(categ == "musique"){
+                     if(typeMedia == "musique"){
 
                        if(titreMusique != "") {stringConcat += "<div style=\"display:inline-block;\"><p>" + titreMusique + "</p>";}
                         stringConcat += "<iframe  scrolling=\"no\" frameborder=\"no\" src=" + valMusique + "></iframe></div>";
@@ -216,4 +216,3 @@ $(document).ready(function(){
     $(this).removeClass('hover_genre_active');
  });
 });
-
