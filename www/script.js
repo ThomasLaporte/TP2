@@ -41,7 +41,7 @@ $(document).ready(function(){
     // Noeud correspondant à musique ou video
         $.each(data, function(typeMedia, item) {
 
-        if(categ.indexOf(typeMedia) >= 0)
+        if(typeContenu.indexOf(typeMedia) >= 0)
         {
             stringConcat += "<section class=\"" + typeMedia + "\">";
 
@@ -106,7 +106,7 @@ $(document).ready(function(){
                    // LIEN
                    if(categorieName == "lien"){
                      // Si c'est une musique Soundcloud
-                     if(categ == "musique"){
+                     if(typeContenu == "musique"){
 
                        if(titreMusique != "") {stringConcat += "<div style=\"display:inline-block;\"><p>" + titreMusique + "</p>";}
                         stringConcat += "<iframe  scrolling=\"no\" frameborder=\"no\" src=" + categorieValue + "></iframe></div>";
@@ -138,7 +138,7 @@ function loadingScreen() {
   document.getElementById('wrapper').style.visibility = 'visible';
 }
 
-/*SCROLLING*/
+/*NAV RESPONSIVE ON SCROLLING*/
 
      $(function(){
    $(window).scroll(function () {
@@ -160,6 +160,15 @@ function loadingScreen() {
    });
  });
 
+/*BTN BAS ON SCROLLING*/
+
+$('.btn_top').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 500);
+    return false;
+});
+
      $(function(){
    $(window).scroll(function () {
       if ($(this).scrollTop() > 70) {
@@ -180,16 +189,7 @@ function loadingScreen() {
    });
  });
 
-/*SCROLLING ONCLICK*/
-
-$('.btn_top').click(function(){
-    $('html, body').animate({
-        scrollTop: $( $(this).attr('href') ).offset().top
-    }, 500);
-    return false;
-});
-
-/*CLASS ONMOUSEOVER*/
+/*BTN NAV*/
 
 $(document).ready(function(){
   $(".nav_a_01, .nav_a_02").hover(function(){
