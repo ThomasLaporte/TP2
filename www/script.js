@@ -58,15 +58,7 @@ $('.btn_top').click(function(){
 /*BTN NAV*/
 
 $(document).ready(function(){
-  $(".nav_a_01").hover(function(){
-    $(this).addClass('hover');
-  }, function(){
-    $(this).removeClass('hover');
- });
-});
-
-$(document).ready(function(){
-  $(".nav_a_02").hover(function(){
+  $(".nav_a_01, .nav_a_02").hover(function(){
     $(this).addClass('hover');
   }, function(){
     $(this).removeClass('hover');
@@ -88,4 +80,13 @@ $(document).ready(function(){
     $(".i02").removeClass('hover_a');
  });
 });
+
+$(document).ready(function(){
+  $(".hover_genre").hover(function(){
+    $(this).addClass('hover_genre_active');
+  }, function(){
+    $(this).removeClass('hover_genre_active');
+ });
+});
+
     
