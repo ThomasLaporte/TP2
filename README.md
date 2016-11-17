@@ -16,4 +16,8 @@ Le site est adapté au mobile (responsive) mais seulement en orientation portrai
 
 Pour conclure, ce court projet nous aura permis de travailler en équipe et de se répartir les tâches afin de travailler plus efficacement et de réaliser ce projet plus vite.
 
+Lien vers le fichier de gestion des bugs
+https://docs.google.com/spreadsheets/d/12N_FzXfY3QbWSsNFZ33KxXiGpvLCqyka1AxgPcMELnM/edit?usp=sharing
+
 Sources : Font-Awesome, SoundCloud, Youtube, Github, Slack
+
