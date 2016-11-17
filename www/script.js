@@ -216,3 +216,4 @@ $(document).ready(function(){
     $(this).removeClass('hover_genre_active');
  });
 });
+
