@@ -11,7 +11,16 @@ $(document).ready(function(){
     var categ = "";
     var styleContenu = "";
 
-    if ($("main span").attr('id').indexOf("music") >= 0){categ = "musique";} else {categ = "video";}
+    if($("main span").attr('id').indexOf("music") >= 0 && $("main span").attr('id').indexOf("video") >= 0)
+    {
+      categ = "musique video";
+    }
+    else {
+      if ($("main span").attr('id').indexOf("music") >= 0){categ = "musique";}
+      else {
+        categ = "video";
+      }
+    }
 
     // Style du contenu (RAP / ROCK)
 
@@ -33,9 +42,9 @@ $(document).ready(function(){
     // PArcours du fichier JSON
         $.each(data, function(typeMedia, item) {
 
-        if(typeMedia == categ)
+        if(categ.indexOf(typeMedia) >= 0)
         {
-            stringConcat += "<section class=\"" + categ + "\">";
+            stringConcat += "<section class=\"" + typeMedia + "\">";
 
             $.each(item, function(titre,  valTitre){
 
@@ -45,6 +54,7 @@ $(document).ready(function(){
                    if(valueMusique == "genre" && genre != valMusique)
                    {
                      if(genre != "") {stringConcat += "</article>";}
+
                        stringConcat += "<h2>" + valMusique +"</h2>";
                        genre = valMusique;
                        couleurBack = "music_container blank";
@@ -89,7 +99,13 @@ $(document).ready(function(){
 
                    // LIEN
                    if(valueMusique == "lien"){
+                     if(categ == "musique"){
                         stringConcat += "<iframe  scrolling=\"no\" frameborder=\"no\" src=" + valMusique + "></iframe>";
+                      }
+                      else {
+                        stringConcat += "<iframe src=\""+ valMusique +"\" frameborder=\"0\" allowfullscreen></iframe>";
+                      }
+
                    }
                });
              }
