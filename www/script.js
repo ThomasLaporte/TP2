@@ -138,7 +138,7 @@ function loadingScreen() {
   document.getElementById('wrapper').style.visibility = 'visible';
 }
 
-/*NAV RESPONSIVE ON SCROLLING*/
+/*SCROLLING*/
 
      $(function(){
    $(window).scroll(function () {
@@ -160,15 +160,6 @@ function loadingScreen() {
    });
  });
 
-/*BTN BAS ON SCROLLING*/
-
-$('.btn_top').click(function(){
-    $('html, body').animate({
-        scrollTop: $( $(this).attr('href') ).offset().top
-    }, 500);
-    return false;
-});
-
      $(function(){
    $(window).scroll(function () {
       if ($(this).scrollTop() > 70) {
@@ -189,7 +180,16 @@ $('.btn_top').click(function(){
    });
  });
 
-/*BTN NAV*/
+/*SCROLLING ONCLICK*/
+
+$('.btn_top').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 500);
+    return false;
+});
+
+/*CLASS ONMOUSEOVER*/
 
 $(document).ready(function(){
   $(".nav_a_01, .nav_a_02").hover(function(){
