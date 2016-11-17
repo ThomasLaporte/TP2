@@ -1,3 +1,110 @@
+/* SCRIPT REMPLISSAGE DYNAMIQUE DE LA PAGE */
+$(document).ready(function(){
+
+  $.getJSON("data.json", function(data){
+
+    var genre = "";
+    var artiste = "";
+    var couleurBack = "music_container blank";
+
+    // Catégorie (musique / video)
+    var categ = "";
+    var styleContenu = "";
+
+    if ($("main span").attr('id').indexOf("music") >= 0){categ = "musique";} else {categ = "video";}
+
+    // Style du contenu (RAP / ROCK)
+
+    if ($("main span").attr('id').indexOf("rap") >= 0)
+    {
+      styleContenu = "Hip Hop";
+    }
+    else {
+      if($("main span").attr('id').indexOf("rock") >= 0)
+      {
+        styleContenu = "Rock";
+      }
+      else {
+        styleContenu = "";
+      }
+    }
+
+    var stringConcat = "";
+    // PArcours du fichier JSON
+        $.each(data, function(typeMedia, item) {
+
+        if(typeMedia == categ)
+        {
+            stringConcat += "<section class=\"" + categ + "\">";
+
+            $.each(item, function(titre,  valTitre){
+
+              if(styleContenu == this.genre || styleContenu == "" ){
+               $.each(valTitre, function(valueMusique, valMusique){
+                   // GENRE
+                   if(valueMusique == "genre" && genre != valMusique)
+                   {
+                       stringConcat += "<h2>" + valMusique +"</h2>";
+                       genre = valMusique;
+                       couleurBack = "music_container blank";
+                   }
+
+                   // ARTISTE
+                   if(valueMusique == "artiste")
+                   {
+                       if(artiste == "")
+                       {
+                           stringConcat += "<article class=\"" + couleurBack + "\">";
+                           stringConcat += "<h3>" + valMusique + "</h3>";
+                       }
+                       else
+                       {
+                           if(artiste != "" && artiste != valMusique)
+                           {
+                               stringConcat += "</article>";
+                               stringConcat += "<article class=\""+ couleurBack +"\">";
+                               stringConcat += "<h3>" + valMusique + "</h3>";
+                           }
+                       }
+                        artiste = valMusique;
+
+                        // Changement couleur Background
+                        if(couleurBack == "music_container blank")
+                        {
+                          couleurBack = "music_container";
+                        }
+                        else {
+                          if(couleurBack == "music_container")
+                          {
+                            couleurBack = "music_container last";
+                          }
+                          else
+                          {
+                            couleurBack = "music_container blank";
+                          }
+                        }
+
+                   }
+
+                   // LIEN
+                   if(valueMusique == "lien"){
+                        stringConcat += "<iframe  scrolling=\"no\" frameborder=\"no\" src=" + valMusique + "></iframe>";
+                   }
+               });
+             }
+            });
+
+
+            stringConcat += "</section>";
+            $("main").append(stringConcat);
+            stringConcat = "";
+          }
+        });
+    });
+});
+
+
+
 function loadingScreen() {
   document.body.removeChild(document.getElementById('item'));
 
@@ -44,7 +151,7 @@ $('.btn_top').click(function(){
       }
    });
  });
-    
+
      $(function(){
    $(window).scroll(function () {
       if ($(this).scrollTop() > 70) {
@@ -72,7 +179,7 @@ $(document).ready(function(){
     $(".i01").removeClass('hover_a');
  });
 });
-    
+
 $(document).ready(function(){
   $(".nav_a_02").hover(function(){
     $(".i02").addClass('hover_a');
@@ -88,5 +195,3 @@ $(document).ready(function(){
     $(this).removeClass('hover_genre_active');
  });
 });
-
-    
