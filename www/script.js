@@ -44,6 +44,7 @@ $(document).ready(function(){
                    // GENRE
                    if(valueMusique == "genre" && genre != valMusique)
                    {
+                     if(genre != "") {stringConcat += "</article>";}
                        stringConcat += "<h2>" + valMusique +"</h2>";
                        genre = valMusique;
                        couleurBack = "music_container blank";
