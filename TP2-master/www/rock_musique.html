@@ -1,0 +1,89 @@
+<!doctype html>
+
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Musique Rock</title>
+    <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+</head>
+
+<body id="body" onload="loadingScreen();">
+<div id="item">
+   <div class="loader"></div>
+   <!-- <p>Un instant de patience est déjà une victoire &hellip;</p> -->
+ </div>
+<div id="wrapper">
+<header>
+    <div id="logo_top"><h1><a href="index.html">Awesome music website</a></h1></div>
+    <nav class="nav">
+            <ul id="menu-deroulant">
+                <li><a class="nav_a nav_a_01" href="#"><i class="fa fa-music fa-2x i01" aria-hidden="true"></i></a>
+            <ul>
+                <li class="hover_genre genre01"><a class="hover_a_genre" href="hip-hop_musique.html">Hip Hop</a></li>
+                <li class="hover_genre genre02"><a class="hover_a_genre" href="rock_musique.html">Rock</a></li>
+            </ul>
+        </li>
+        <li><a class="nav_a nav_a_02" href="#"><i class="fa fa-play-circle-o fa-2x i02" aria-hidden="true"></i></a>
+            <ul>
+                <li class="hover_genre"><a class="hover_a_genre" href="rap-video.html">Hip Hop</a></li>
+                <li class="hover_genre"><a class="hover_a_genre" href="rock-video.html">Rock</a></li>
+            </ul>
+        </li>
+    </ul>
+    </nav>
+</header>
+
+    <main>
+        <span id = "music rock" style = "display:none;"></span>
+        <!-- <section class="musique">
+        <h2>Rock</h2>
+
+            <article class="music_container blank">
+<h3>NIRVANA</h3>
+<iframe  scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/271225357&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+<iframe  scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/271222676&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+<iframe  scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/28211415&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+<iframe  scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/16877218&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
+    </article>
+
+            <article class="music_container">
+
+<h3>ROLLING STONES</h3>
+<iframe  scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/271217232&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+<iframe  scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/47252950&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+<iframe  scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/26641435&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+<iframe  scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/26640951&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+    </article>
+
+            <article class="music_container last">
+    <h3>ACDC :</h3>
+<iframe  scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/151853890&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+<iframe  scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/30413711&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+<iframe  scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/154016669&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+<iframe  scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/176244788&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+    </article>
+        </section> -->
+    </main>
+<span class="btn_container"><a href="#logo_top" class="btn_top"><i class="fa fa-arrow-up fa-2x" aria-hidden="true"></i></a></span>
+<footer>
+    <section class="social_container">
+        <ul class="social_ul">
+            <li><a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+        </ul>
+    </section>
+</footer>
+
+    </div>
+    <script language="javascript" src="script.js"></script>
+</body>
+
+</html>

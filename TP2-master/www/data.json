@@ -1,0 +1,232 @@
+{
+    "musique": {
+        "titre0": {
+            "genre":"Rock",
+            "artiste":"NIRVANA",
+            "lien":"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/271225357&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"
+            },
+        "titre1": {
+            "genre":"Rock",
+            "artiste":"NIRVANA",
+            "lien":"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/271222676&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"
+            },
+        "titre2": {
+            "genre":"Rock",
+            "artiste":"NIRVANA",
+            "lien":"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/28211415&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"
+            },
+        "titre3": {
+            "genre":"Rock",
+            "artiste":"NIRVANA",
+            "lien":"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/16877218&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"
+            },
+        "titre4": {
+            "genre":"Rock",
+            "artiste":"ROLLING STONES",
+            "lien":"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/271217232&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"
+            },
+        "titre5": {
+            "genre":"Rock",
+            "artiste":"ROLLING STONES",
+            "lien":"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/47252950&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"
+            },
+        "titre6": {
+            "genre":"Rock",
+            "artiste":"ROLLING STONES",
+            "lien":"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/26641435&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"
+            },
+        "titre7": {
+            "genre":"Rock",
+            "artiste":"ROLLING STONES",
+            "lien":"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/26640951&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"
+            },
+        "titre8": {
+            "genre":"Rock",
+            "artiste":"ACDC",
+            "lien":"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/151853890&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"
+            },
+        "titre9": {
+            "genre":"Rock",
+            "artiste":"ACDC",
+            "lien":"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/30413711&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"
+            },
+        "titre10": {
+            "genre":"Rock",
+            "artiste":"ACDC",
+            "lien":"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/154016669&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"
+            },
+        "titre11": {
+            "genre":"Rock",
+            "artiste":"ACDC",
+            "lien":"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/176244788&amp;color=0066cc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"
+            },
+         "titre12": {
+            "genre":"Hip Hop",
+            "artiste":"Eminem",
+            "lien":"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/271227323&amp;color=00cc11&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"
+            },
+         "titre13": {
+            "genre":"Hip Hop",
+            "artiste":"Eminem",
+            "lien":"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/256257141&amp;color=00cc11&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"
+            },
+         "titre14": {
+            "genre":"Hip Hop",
+            "artiste":"Eminem",
+            "lien":"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/256257180&amp;color=00cc11&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"
+            },
+         "titre15": {
+            "genre":"Hip Hop",
+            "artiste":"Eminem",
+            "lien":"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/256257311&amp;color=00cc11&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"
+            },
+        "titre16": {
+            "genre":"Hip Hop",
+            "artiste":"N.W.A",
+            "lien":"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/284874646&amp;color=00cc11&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"
+            },
+        "titre17": {
+            "genre":"Hip Hop",
+            "artiste":"N.W.A",
+            "lien":"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/274443915&amp;color=00cc11&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"
+            },
+        "titre18": {
+            "genre":"Hip Hop",
+            "artiste":"N.W.A",
+            "lien":"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/284875657&amp;color=00cc11&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"
+            },
+        "titre19": {
+            "genre":"Hip Hop",
+            "artiste":"N.W.A",
+            "lien":"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/252717151&amp;color=00cc11&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"
+            },
+        "titre20": {
+            "genre":"Hip Hop",
+            "artiste":"Tupac",
+            "lien":"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/155326888&amp;color=00cc11&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"
+            },
+        "titre21": {
+            "genre":"Hip Hop",
+            "artiste":"Tupac",
+            "lien":"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/155335780&amp;color=00cc11&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"
+            },
+        "titre22": {
+            "genre":"Hip Hop",
+            "artiste":"Tupac",
+            "lien":"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/155328887&amp;color=00cc11&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"
+            },
+        "titre23": {
+            "genre":"Hip Hop",
+            "artiste":"Tupac",
+            "lien":"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/155327018&amp;color=00cc11&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"
+            }
+    },
+
+    "video": {
+        "clip0": {
+            "genre":"Rock",
+            "artiste":"ACDC",
+            "lien":"https://www.youtube.com/embed/v2AC41dglnM"
+            },
+        "clip1": {
+            "genre":"Rock",
+            "artiste":"ACDC",
+            "lien":"https://www.youtube.com/embed/44XYEeD1A1U"
+            },
+        "clip2": {
+            "genre":"Rock",
+            "artiste":"ACDC",
+            "lien":"https://www.youtube.com/embed/JGftIcp2SC0"
+            },
+        "clip3": {
+            "genre":"Rock",
+            "artiste":"NIRVANA",
+            "lien":"https://www.youtube.com/embed/qv96yJYhk3M"
+            },
+        "clip4": {
+            "genre":"Rock",
+            "artiste":"NIRVANA",
+            "lien":"https://www.youtube.com/embed/pkcJEvMcnEg"
+            },
+        "clip5": {
+            "genre":"Rock",
+            "artiste":"NIRVANA",
+            "lien":"https://www.youtube.com/embed/fregObNcHC8"
+            },
+        "clip6": {
+            "genre":"Rock",
+            "artiste":"ROLLING STONES",
+            "lien":"https://www.youtube.com/embed/8kl6q_9qZOs"
+            },
+        "clip7": {
+            "genre":"Rock",
+            "artiste":"ROLLING STONES",
+            "lien":"https://www.youtube.com/embed/Fmfi3UbDPnQ"
+            },
+        "clip8": {
+            "genre":"Rock",
+            "artiste":"ROLLING STONES",
+            "lien":"https://www.youtube.com/embed/hic-dnps6MU"
+            },
+         "clip12": {
+            "genre":"Hip Hop",
+            "artiste":"Eminem",
+            "lien":"https://www.youtube.com/embed/XbGs_qK2PQA"
+            },
+         "clip13": {
+            "genre":"Hip Hop",
+            "artiste":"Eminem",
+            "lien":"https://www.youtube.com/embed/j5-yKhDd64s"
+            },
+         "clip14": {
+            "genre":"Hip Hop",
+            "artiste":"Eminem",
+            "lien":"https://www.youtube.com/embed/IJghByFDkX8"
+            },
+         "clip15": {
+            "genre":"Hip Hop",
+            "artiste":"Eminem",
+            "lien":"https://www.youtube.com/embed/9O-bdFLlg4g"
+            },
+        "clip16": {
+            "genre":"Hip Hop",
+            "artiste":"N.W.A",
+            "lien":"https://www.youtube.com/embed/9jOqOlETcRU"
+            },
+        "clip17": {
+            "genre":"Hip Hop",
+            "artiste":"N.W.A",
+            "lien":"https://www.youtube.com/embed/umUHR1JlT_c"
+            },
+        "clip18": {
+            "genre":"Hip Hop",
+            "artiste":"N.W.A",
+            "lien":"https://www.youtube.com/embed/KHaOul8gVVc"
+            },
+        "clip19": {
+            "genre":"Hip Hop",
+            "artiste":"N.W.A",
+            "lien":"https://www.youtube.com/embed/TIyfCOGbI1k"
+            },
+        "clip20": {
+            "genre":"Hip Hop",
+            "artiste":"Tupac",
+            "lien":"https://www.youtube.com/embed/yrWbzKu7ySU"
+            },
+        "clip21": {
+            "genre":"Hip Hop",
+            "artiste":"Tupac",
+            "lien":"https://www.youtube.com/embed/X203WIT3mYk"
+            },
+        "clip22": {
+            "genre":"Hip Hop",
+            "artiste":"Tupac",
+            "lien":"https://www.youtube.com/embed/nkJA6SYwa94"
+            },
+        "clip23": {
+            "genre":"Hip Hop",
+            "artiste":"Tupac",
+            "lien":"https://www.youtube.com/embed/iv6dgBo0uTU"
+            }
+    }
+}
