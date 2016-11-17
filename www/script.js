@@ -7,23 +7,20 @@ $(document).ready(function(){
     var artiste = "";
     var couleurBack = "music_container blank";
 
-    // Catégorie (musique / video)
-    var categ = "";
+
+    var typeContenu = "";
     var styleContenu = "";
 
+    // Catégorie (musique / video)
     if($("main span").attr('id').indexOf("music") >= 0 && $("main span").attr('id').indexOf("video") >= 0)
     {
-      categ = "musique video";
+      typeContenu = "musique video";
     }
     else {
-      if ($("main span").attr('id').indexOf("music") >= 0){categ = "musique";}
-      else {
-        categ = "video";
-      }
+      if ($("main span").attr('id').indexOf("music") >= 0){typeContenu = "musique";} else {typeContenu = "video"; }
     }
 
     // Style du contenu (RAP / ROCK)
-
     if ($("main span").attr('id').indexOf("rap") >= 0)
     {
       styleContenu = "Hip Hop";
@@ -39,45 +36,50 @@ $(document).ready(function(){
     }
 
     var stringConcat = "";
-    // PArcours du fichier JSON
+    // Parcours du fichier JSON
+
+    // Noeud correspondant à musique ou video
         $.each(data, function(typeMedia, item) {
 
         if(categ.indexOf(typeMedia) >= 0)
         {
             stringConcat += "<section class=\"" + typeMedia + "\">";
 
+            // noeud correspondant à clip... et titre...
             $.each(item, function(titre,  valTitre){
+             var titreMusique = "";
 
               if(styleContenu == this.genre || styleContenu == "" ){
-               $.each(valTitre, function(valueMusique, valMusique){
+                // noeud correspondant aux valeurs "Genre", "Artiste", "Titre" et "URL"
+               $.each(valTitre, function(categorieName, categorieValue){
                    // GENRE
-                   if(valueMusique == "genre" && genre != valMusique)
+                   if(categorieName == "genre" && typeContenu != categorieValue)
                    {
-                     if(genre != "") {stringConcat += "</article>";}
+                     if(typeContenu != "") {stringConcat += "</article>";}
 
-                       stringConcat += "<h2>" + valMusique +"</h2>";
-                       genre = valMusique;
+                       stringConcat += "<h2>" + categorieValue +"</h2>";
+                       typeContenu = categorieValue;
                        couleurBack = "music_container blank";
                    }
 
                    // ARTISTE
-                   if(valueMusique == "artiste")
+                   if(categorieName == "artiste")
                    {
                        if(artiste == "")
                        {
                            stringConcat += "<article class=\"" + couleurBack + "\">";
-                           stringConcat += "<h3>" + valMusique + "</h3>";
+                           stringConcat += "<h3>" + categorieValue + "</h3>";
                        }
                        else
                        {
-                           if(artiste != "" && artiste != valMusique)
+                           if(artiste != "" && artiste != categorieValue)
                            {
                                stringConcat += "</article>";
                                stringConcat += "<article class=\""+ couleurBack +"\">";
-                               stringConcat += "<h3>" + valMusique + "</h3>";
+                               stringConcat += "<h3>" + categorieValue + "</h3>";
                            }
                        }
-                        artiste = valMusique;
+                        artiste = categorieValue;
 
                         // Changement couleur Background
                         if(couleurBack == "music_container blank")
@@ -96,14 +98,21 @@ $(document).ready(function(){
                         }
 
                    }
+                   // Si un titre existe sur le contenu, on le stock
+                    if(categorieName == "titre"){
+                      titreMusique = categorieValue;
+                    }
 
                    // LIEN
-                   if(valueMusique == "lien"){
+                   if(categorieName == "lien"){
+                     // Si c'est une musique Soundcloud
                      if(categ == "musique"){
-                        stringConcat += "<iframe  scrolling=\"no\" frameborder=\"no\" src=" + valMusique + "></iframe>";
+
+                       if(titreMusique != "") {stringConcat += "<div style=\"display:inline-block;\"><p>" + titreMusique + "</p>";}
+                        stringConcat += "<iframe  scrolling=\"no\" frameborder=\"no\" src=" + categorieValue + "></iframe></div>";
                       }
                       else {
-                        stringConcat += "<iframe src=\""+ valMusique +"\" frameborder=\"0\" allowfullscreen></iframe>";
+                        stringConcat += "<iframe src=\""+ categorieValue +"\" frameborder=\"0\" allowfullscreen></iframe>";
                       }
 
                    }
@@ -113,6 +122,7 @@ $(document).ready(function(){
 
 
             stringConcat += "</section>";
+            // Ajout de l'ensemble du contenu à la page dans les balises <main>
             $("main").append(stringConcat);
             stringConcat = "";
           }
